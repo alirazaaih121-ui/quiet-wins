@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Quiet-Wins/', // <--- add this line
+  base: '/quiet-wins/', // <--- add this line
 });

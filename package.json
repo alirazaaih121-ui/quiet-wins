@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://alirazaaih121-ui.github.io/Quiet-Wins",
+  "homepage": "https://alirazaaih121-ui.github.io/quiet-wins/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
