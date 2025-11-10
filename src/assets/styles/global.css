@@ -1,0 +1,146 @@
+:root{
+  --bg: #FBF7F3;         /* page background - warm cream */
+  --surface: #FFFFFF;    /* cards / surfaces */
+  --accent: #5A4DD6;     /* primary purple accent */
+  --accent-soft: #F3F1FF;/* soft wash */
+  --cta: #2F6FDB;        /* alternate CTA blue */
+  --text: #1B1733;       /* deep text */
+  --muted: #6B6B72;      /* subtext */
+  --neutral: #E9E6E2;    /* borders/shadows */
+  --radius: 12px;
+  --max-width: 1100px;
+  --content-gap: 24px;
+}
+
+/* Base */
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* container width */
+.container { max-width: var(--max-width); }
+
+/* Headings */
+h1,h2,h3,h4{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  color: var(--text);
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+/* hero */
+.display-5 { font-size: 48px; line-height:1.02; font-weight:700; }
+.lead { font-size: 18px; color: var(--muted); }
+
+/* Cards */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: none;
+  box-shadow: 0 8px 24px rgba(30,30,60,0.06);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(180deg,var(--accent), #4d44d0);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.05rem;
+  border-radius: 10px;
+  font-weight:600;
+  box-shadow: 0 6px 18px rgba(90,77,214,0.14);
+}
+.btn-cta {
+  background: var(--cta);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.55rem 1rem;
+  border: none;
+}
+.btn-outline-muted {
+  background: transparent;
+  border: 1px solid var(--neutral);
+  color: var(--muted);
+  padding: 0.45rem 0.9rem;
+  border-radius:10px;
+}
+
+/* Navbar */
+.navbar {
+  background: transparent;
+  padding: 1rem 0;
+}
+.navbar .navbar-brand{ font-weight:700; letter-spacing:0.3px; color:var(--text);}
+.navbar .nav-link{ color:var(--muted); }
+
+/* hero placeholder */
+.placeholder-image {
+  min-height: 180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fffafc, #fbf7ff);
+}
+
+/* Phoenix avatar */
+.round-avatar{
+  width:96px;height:96px;border-radius:999px;
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--accent-soft); color:var(--accent);
+  font-weight:700;font-size:28px;
+}
+
+/* Story cards */
+.story-card {
+  border-radius:12px;
+  padding:18px;
+  background: linear-gradient(180deg, #fff, #fbfbff);
+  box-shadow: 0 6px 18px rgba(20,20,40,0.04);
+}
+
+/* Footer */
+footer { color: var(--muted); padding: 2rem 0; }
+
+/* small helpers */
+.text-muted { color: var(--muted); }
+.center { text-align:center; }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .display-5 { font-size: 34px; }
+  .placeholder-image { min-height:140px; }
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.btn-primary {
+  background-color: #2F3E46 !important;
+  border-color: #2F3E46 !important;
+  border-radius: 50px !important;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #1f2c32 !important;
+  border-color: #1f2c32 !important;
+}
